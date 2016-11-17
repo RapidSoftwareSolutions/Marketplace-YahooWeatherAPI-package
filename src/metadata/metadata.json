@@ -1,0 +1,43 @@
+{
+  "package": "YahooWeatherAPI",
+  "tagline": "Yahoo! Weather API Wrapper",
+  "description": "Get up-to-date weather information for any location, including 5-day forecast, wind, atmosphere, astronomy conditions, and more.",
+  "image": "http://logo.clearbit.com/yahoo.com",
+  "repo": "https://github.com/RapidSoftwareSolutions/Marketplace-YahooWeatherAPI-package",
+  "accounts": {},
+  "blocks": [
+    {
+      "name": "getWheatherForecast",
+      "description": "This endpoint allows to receive weather information.",
+      "args": [
+        {
+          "name": "woeid",
+          "type": "String",
+          "info": "Optional: The location for the weather forecast as a WOEID, example is 2487889 (San Diego, CA). Required if location not provided."
+        }, {
+          "name": "location",
+          "type": "String",
+          "info": "Optional: The location for the weather forecast as Text, example \"chicago, il\". Required if woeid not provided."
+        }, {
+          "name": "filter",
+          "type": "String",
+          "info": "Optional: The comma-separated filter of data to be received. For example: wind, item.condition.text, astronomy.sunset. See README for more details and examples."
+        }, {
+          "name": "yql",
+          "type": "String",
+          "info": "Optional: Your custom yql expression. Example: \"select item.condition from weather.forecast where woeid = 2487889\". NOTE: If provided yql parameter, other parameters will be ignored."
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    }
+  ]
+}
