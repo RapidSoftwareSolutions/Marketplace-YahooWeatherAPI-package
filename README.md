@@ -31,7 +31,7 @@ For example:
 2) wind,description - will return information only for wind section and description 
 
 **Response example**
-
+```json
 {  
     "callback":"success",
     "contextWrites":{  
@@ -185,4 +185,5 @@ For example:
             }
         }
     }
-} 
+}
+```
