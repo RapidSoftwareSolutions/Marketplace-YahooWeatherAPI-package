@@ -19,10 +19,16 @@ This endpoint allows to receive weather information.
 | `filter`   | String    |  Optional: The comma-separated filter of data to be received. For example: wind, item.condition.text, astronomy.sunset. |
 | `yql`      | String    |  Optional: Your custom yql expression. Example: \"select item.condition from weather.forecast where woeid = 2487889\". NOTE: If provided yql parameter, other parameters will be ignored. |
 
-### filter format: 
+### filter field format: 
 
 ```json
 wind,item.condition
+```
+
+### yql field format: 
+
+```json
+select item.condition from weather.forecast where woeid = 2487889
 ```
 To get all possible values,  execute request with parameter `woeid` or `location`. Possible values to be filtered be shown in query.results.channel.
 For example:
