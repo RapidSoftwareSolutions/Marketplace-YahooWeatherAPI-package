@@ -7,7 +7,7 @@
   "accounts": {},
   "blocks": [
     {
-      "name": "getWheatherForecast",
+      "name": "getWeatherForecast",
       "description": "This endpoint allows to receive weather information.",
       "args": [
         {

@@ -4,7 +4,7 @@ namespace Test\Functional;
 
 class YahooWeatherAPITest extends BaseTestCase {
     
-    public function testGetWheatherForecast() {
+    public function testGetWeatherForecast() {
         
         $var = '{
                     "args": {
@@ -14,7 +14,7 @@ class YahooWeatherAPITest extends BaseTestCase {
                 }';
         $post_data = json_decode($var, true);
 
-        $response = $this->runApp('POST', '/api/YahooWeatherAPI/getWheatherForecast', $post_data);
+        $response = $this->runApp('POST', '/api/YahooWeatherAPI/getWeatherForecast', $post_data);
         
         $this->assertEquals(200, $response->getStatusCode());
         $this->assertNotEmpty($response->getBody());

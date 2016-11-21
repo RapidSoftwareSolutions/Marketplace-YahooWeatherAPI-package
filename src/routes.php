@@ -1,6 +1,6 @@
 <?php
 $routes = [
-    'getWheatherForecast',
+    'getWeatherForecast',
     'metadata'
 ];
 foreach($routes as $file) {

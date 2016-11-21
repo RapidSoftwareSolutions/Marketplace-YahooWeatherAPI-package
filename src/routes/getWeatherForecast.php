@@ -1,6 +1,6 @@
 <?php
 
-$app->post('/api/YahooWeatherAPI/getWheatherForecast', function ($request, $response, $args) {
+$app->post('/api/YahooWeatherAPI/getWeatherForecast', function ($request, $response, $args) {
     $settings =  $this->settings;
     
     $data = $request->getBody();

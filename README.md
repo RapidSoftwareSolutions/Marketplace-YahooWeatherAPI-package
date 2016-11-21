@@ -7,7 +7,7 @@ Get up-to-date weather information for any location, including 5-day forecast, w
 ----------
 
 
-**getWheatherForecast**
+**getWeatherForecast**
 -------
 
 This endpoint allows to receive weather information. 
