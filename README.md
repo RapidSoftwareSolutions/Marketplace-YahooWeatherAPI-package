@@ -2,7 +2,7 @@ Yahoo! Weather API package
 ===================
 
 
-Get up-to-date weather information for any location, including 5-day forecast, wind, atmosphere, astronomy conditions, and more.
+Get up-to-date weather forecast for any location.
 
 ----------
 
