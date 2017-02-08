@@ -1,4 +1,6 @@
-Yahoo! Weather API package
+[![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/YahooWeatherAPI/functions?utm_source=RapidAPIGitHub_YahooWeatherFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
+
+#Yahoo! Weather API package
 ===================
 
 
