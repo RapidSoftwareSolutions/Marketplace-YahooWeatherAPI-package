@@ -51,7 +51,8 @@ $app->post('/api/YahooWeatherAPI/getWeatherForecast', function ($request, $respo
             }
         } elseif(empty($post_data['args']['woeid']) && !empty($post_data['args']['location'])) {
             if(!empty($post_data['args']['filter'])) {
-                $yql = 'select '.$post_data['args']['filter'].' from weather.forecast where woeid in (select woeid from geo.places(1) where text="'.$post_data['args']['location'].'")';
+                $filter = is_array($post_data['args']['filter']) ? implode(',', $post_data['args']['filter']) : $post_data['args']['filter'];
+                $yql = 'select '.$filter.' from weather.forecast where woeid in (select woeid from geo.places(1) where text="'.$post_data['args']['location'].'")';
             } else {
                 $yql = 'select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="'.$post_data['args']['location'].'")';
             }

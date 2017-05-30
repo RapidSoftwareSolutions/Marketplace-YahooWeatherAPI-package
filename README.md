@@ -6,6 +6,16 @@
 
 Get up-to-date weather forecast for any location.
 
+## Custom datatypes: 
+ |Datatype|Description|Example
+ |--------|-----------|----------
+ |Datepicker|String which includes date and time|```2016-05-28 00:00:00```
+ |Map|String which includes latitude and longitude coma separated|```50.37, 26.56```
+ |List|Simple array|```["123", "sample"]``` 
+ |Select|String with predefined values|```sample```
+ |Array|Array of objects|```[{"Second name":"123","Age":"12","Photo":"sdf","Draft":"sdfsdf"},{"name":"adi","Second name":"bla","Age":"4","Photo":"asfserwe","Draft":"sdfsdf"}] ```
+ 
+
 ----------
 
 
@@ -18,7 +28,7 @@ This endpoint allows to receive weather information.
 | -------    | ----      | ---           |
 | `woeid`    | String    |  Optional: The location for the weather forecast as a WOEID, example is 2487889 (San Diego, CA). Required if location not provided. |
 | `location` | String    |  Optional: The location for the weather forecast as Text, example \"chicago, il\". Required if woeid not provided.   |
-| `filter`   | String    |  Optional: The comma-separated filter of data to be received. For example: wind, item.condition.text, astronomy.sunset. |
+| `filter`   | List    |  Optional: The array of data to be received. For example: wind, item.condition.text, astronomy.sunset. |
 | `yql`      | String    |  Optional: Your custom yql expression. Example: \"select item.condition from weather.forecast where woeid = 2487889\". NOTE: If provided yql parameter, other parameters will be ignored. |
 
 ### filter field format: 
