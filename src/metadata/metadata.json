@@ -34,7 +34,7 @@
         {
           "name": "filter",
           "type": "List",
-          "info": "The comma-separated filter of data to be received. For example: wind, item.condition.text, astronomy.sunset. See README for more details and examples.",
+          "info": "The array of data to be received. For example: wind, item.condition.text, astronomy.sunset. See README for more details and examples.",
           "required": false,
           "structure": {
             "name": "filter",
